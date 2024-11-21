@@ -5,7 +5,7 @@ export const Footer = () => {
     <div className="py-[20px] px-[15px] bg-black text-white">
       <div className="max-w-[1200px] mx-auto w-full">
         <p>wirkaufendeinauto.de International</p>
-        <div className="flex gap-[10px] py-3">
+        <div className="flex flex-wrap gap-[10px] py-3">
           <img src="/images/flag-vivid-de.png" className="w-[34px] h-auto" alt="" />
           <img src="/images/flag-vivid-at.png" className="w-[34px] h-auto" alt="" />
           <img src="/images/flag-vivid-es.png" className="w-[34px] h-auto" alt="" />
