@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #071943;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.bgImg {
+  background-image: url('../public/assets/bg-hero.svg');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+.filter-red {
+  filter: brightness(0) saturate(100%) invert(27%) sepia(85%) saturate(7288%) hue-rotate(350deg) brightness(88%)
+    contrast(120%);
+}
