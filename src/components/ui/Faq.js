@@ -88,7 +88,7 @@ export const Faq = () => {
             <div className="flex items-center  justify-between">
               <h3 className="font-semibold text-black text-[18px] leading-[28px]">{item.title}</h3>
               <img
-                src={activeIndex === index ? '/assets/minus-sign.png' : '/assets/plus.svg'}
+                src={activeIndex === index ? '/images/minus-sign.png' : '/images/plus.svg'}
                 className="w-[14px] h-[14px] filter-red"
                 alt="toggle icon"
               />
