@@ -1,12 +1,12 @@
 import React from 'react';
 const items = [
   {
-    imgSrc: '/images/free-online-car-assessment-icon.svg',
+    imgSrc: '/images/online-survey.png',
     title: 'Faire & professionelle Online-Bewertung',
     description: 'Bei uns erhältst du einen fairen Preis auch ohne Experte zu sein!',
   },
   {
-    imgSrc: '/images/24h-car-sale-icon.svg',
+    imgSrc: '/images/car-sales.png',
     title: 'Autoverkauf innerhalb von 24 Stunden',
     description: 'Verkaufe dein Auto innerhalb eines einzigen Tages - stressfrei und ganz ohne Verhandeln!',
   },
@@ -16,7 +16,7 @@ const items = [
     description: 'Als Europas größter Autoankäufer bieten wir dir europaweit Mega Preise.',
   },
   {
-    imgSrc: '/images/car-sales-contract-icon.svg',
+    imgSrc: '/images/check.png',
     title: 'Kostenlose Abmeldung deines Autos',
     description: 'Wir übernehmen den kompletten Papierkram für dich.',
   },
@@ -27,11 +27,11 @@ export const UspsSection = () => {
       <h1 className="text-center mb-[59px] text-[24px] lg:text-[28px] font-bold text-black ">
         4 Gründe warum du an uns verkaufen solltest
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-[10px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-[20px]">
         {items.map((item, index) => (
           <div key={index} className="pt-[36px] px-[25px] pb-[21px]" style={{ boxShadow: '0 0 8px 0 rgba(0,0,0,.12)' }}>
-            <div className="flex gap-3">
-              <img src={item.imgSrc} className="w-[68px] h-[66px] object-cover" alt={item.title} />
+            <div className="flex flex-col gap-3">
+              <img src={item.imgSrc} className="w-[64px] h-auto object-cover" alt={item.title} />
               <div className="flex flex-col">
                 <h1 className="font-bold text-[16px] text-black leading-1 font-sans">{item.title}</h1>
                 <p>{item.description}</p>
