@@ -27,7 +27,7 @@ export const UspsSection = () => {
   return (
     <div className="max-w-[800px] mx-auto px-4 pt-[70px] pb-[40px] ">
       <h1 className="text-center mb-[59px] text-[24px] lg:text-[28px] font-bold text-black ">
-        Unsere Vorteile
+        Unser Service - Deine Vorteile
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-[20px]">
         {items.map((item, index) => (

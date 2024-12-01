@@ -8,9 +8,9 @@ export const Footer = () => {
           <div className="">
             <p className="mb-[15px]  text-[16px] font-normal">bruchsalerautomobile.de</p>
             <ul className="pl-[50px]  list-disc">
-              <li className="hover:underline cursor-pointer">Häufige Fragen</li>
+              <li onClick={() => window.location.href = "#faq"} className="hover:underline cursor-pointer">Häufige Fragen</li>
 
-              <li className="hover:underline cursor-pointer">Verkauf</li>
+              <li onClick={() => window.location.href = "#calculator"} className="hover:underline cursor-pointer">Verkauf</li>
             </ul>
           </div>
           <div className="">

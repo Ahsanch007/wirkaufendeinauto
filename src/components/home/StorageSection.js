@@ -41,7 +41,7 @@ export const StorageSection = () => {
           ))}
         </div>
         <div className="  flex justify-center">
-          <button className="py-[14px] px-[28px] rounded-[10px] bg-[#ee202c] text-white font-semibold text-[20px]">
+          <button onClick={() => window.location.href = "#calculator"} className="py-[14px] px-[28px] rounded-[10px] bg-[#ee202c] text-white font-semibold text-[20px]">
             Jetzt verkaufen
           </button>
         </div>

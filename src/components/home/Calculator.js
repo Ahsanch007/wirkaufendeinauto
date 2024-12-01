@@ -160,23 +160,25 @@ export default function DynamicCarDetailsForm() {
 
   const CustomSelect = ({ value, onChange, options, placeholder, disabled = false }) => (
     <div className="relative">
-      <select
+      < select
         value={value}
         onChange={onChange}
         disabled={disabled}
         className="appearance-none w-full px-2 py-2 bg-white border-2 disabled:border-[1px] border-[#EE202C] rounded text-base focus:outline-none focus:border-[#EE202C] disabled:bg-[#EE202C]/10 disabled:border-[#EE202C]/10 disabled:cursor-not-allowed"
       >
         <option value="">{placeholder}</option>
-        {options.map((opt) => (
-          <option key={opt} value={opt}>
-            {opt}
-          </option>
-        ))}
-      </select>
+        {
+          options.map((opt) => (
+            <option key={opt} value={opt}>
+              {opt}
+            </option>
+          ))
+        }
+      </select >
       <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-[#EE202C]">
         <ChevronDown className="h-5 w-5" />
       </div>
-    </div>
+    </div >
   );
 
   const SelectableButtons = ({ options, selectedValue, onSelect }) => (
@@ -196,15 +198,16 @@ export default function DynamicCarDetailsForm() {
   );
 
   return (
-    <div className="mx-auto max-w-3xl p-6">
+    <div id="calculator" className="mx-auto max-w-3xl p-6">
       <div className="space-y-8">
         <div className="space-y-2 text-center">
           <h1 className="text-5xl font-bold tracking-tight text-black sm:text-4xl md:text-5xl">
             Verkaufe dein Auto <RevealText />
           </h1>
           <p className="mx-auto max-w-[600px] text-gray-600">
-            Ohne Stress zum Mega Preis - Erhalte direkt deinen finalen Verkaufspreis und buche deinen Abgabe-Termin
-            online
+            Schnell & Einfach das Formular ausfüllen und dein Auto verkaufen. Wir bieten dir die besten Preise und Konditionen.
+            <br />
+            Sie kriegen eine E-Mail mit dem endgültigen Verkaufspreis.
           </p>
         </div>
         <div className="flex md:flex-row gap-y-4 flex-col justify-center md:items-end">
@@ -449,7 +452,7 @@ export default function DynamicCarDetailsForm() {
               type="submit"
               className="w-[90%] mx-auto bg-[#EE202C] hover:bg-[#EE202C]/90 text-white py-3 px-4 rounded text-lg font-semibold flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              <span>Bewertung ansehen</span>
+              <span>Abschicken</span>
               <ChevronRight className="mt-1 h-[25px] w-[25px]" />
             </button>
           </form>
