@@ -56,16 +56,16 @@ export default function DynamicCarDetailsForm() {
   const models = brand ? carData.find((b) => b.brand === brand)?.models.map((m) => m.name) || [] : [];
   const years = model
     ? carData
-        .find((b) => b.brand === brand)
-        ?.models.find((m) => m.name === model)
-        ?.year.map((y) => y.value) || []
+      .find((b) => b.brand === brand)
+      ?.models.find((m) => m.name === model)
+      ?.year.map((y) => y.value) || []
     : [];
 
   const selectedYear = year
     ? carData
-        .find((b) => b.brand === brand)
-        ?.models.find((m) => m.name === model)
-        ?.year.find((y) => y.value === year)
+      .find((b) => b.brand === brand)
+      ?.models.find((m) => m.name === model)
+      ?.year.find((y) => y.value === year)
     : null;
 
   const bodyStyles = selectedYear?.bodyStyle || [];
@@ -186,9 +186,8 @@ export default function DynamicCarDetailsForm() {
           key={option}
           type="button"
           onClick={() => onSelect(option)}
-          className={`px-4 py-2 border-2 rounded flex-1 ${
-            selectedValue === option ? 'border-[#EE202C] text-[#EE202C]' : 'border-[#EE202C]/10 text-gray-700'
-          }`}
+          className={`px-4 py-2 border-2 rounded flex-1 ${selectedValue === option ? 'border-[#EE202C] text-[#EE202C]' : 'border-[#EE202C]/10 text-gray-700'
+            }`}
         >
           {option}
         </button>
@@ -395,11 +394,10 @@ export default function DynamicCarDetailsForm() {
                                   key={decision}
                                   type="button"
                                   onClick={() => setSelectedDecision(decision)}
-                                  className={`px-4 py-2 border-2 rounded flex-1 ${
-                                    selectedDecision === decision
-                                      ? 'border-[#EE202C] text-[#EE202C]'
-                                      : 'border-gray-200 text-gray-700'
-                                  }`}
+                                  className={`px-4 py-2 border-2 rounded flex-1 ${selectedDecision === decision
+                                    ? 'border-[#EE202C] text-[#EE202C]'
+                                    : 'border-gray-200 text-gray-700'
+                                    }`}
                                 >
                                   {decision}
                                 </button>

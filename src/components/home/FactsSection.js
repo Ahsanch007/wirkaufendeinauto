@@ -7,27 +7,25 @@ export const FactsSection = () => {
         <h1 className="text-center mb-[30px] lg:text-[28px] text-[24px] font-bold ">Zahlen & Fakten</h1>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-[15px]">
           <div className="text-center">
-            <h1 className="text-[52px] lg:text-[80px] leading-normal font-bold ">4+ Mio.</h1>
+            <h1 className="text-[52px] lg:text-[80px] leading-normal font-bold ">500+</h1>
             <p className="lg:text-[20px]">
-              Mehr als 4 Mio.
-              <br />
               zufriedene Kunden
             </p>
           </div>
           <div className="text-center">
-            <h1 className="text-[52px] lg:text-[80px] leading-normal font-bold ">30 Sek.</h1>
+            <h1 className="text-[52px] lg:text-[80px] leading-normal font-bold ">Einfach</h1>
             <p className="lg:text-[20px]">
-              Alle 30 Sekunden bewerten
+              Formular ausfüllen
               <br />
-              wir ein Auto
+              Auto verkaufen
             </p>
           </div>
           <div className="text-center">
-            <h1 className="text-[52px] lg:text-[80px] leading-normal font-bold ">120+</h1>
+            <h1 className="text-[52px] lg:text-[80px] leading-normal font-bold ">Gute</h1>
             <p className="lg:text-[20px]">
-              Mehr als 120 Filialen in ganz
+              Preise &
               <br />
-              Deutschland
+              Konditionen
             </p>
           </div>
         </div>

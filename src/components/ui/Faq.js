@@ -15,60 +15,52 @@ export const Faq = () => {
       faqItems: [
         {
           id: 1,
-          title: 'Muss ich Gebühren bezahlen, wenn ich mein Auto nicht verkaufe?',
+          title: 'Entstehen Gebühren, wenn ich mein Auto nicht verkaufe?',
           content:
-            'Nein, für dich entstehen keinerlei Gebühren. Unser Service ist vollkommen kostenlos. Übrigens: Bei uns kannst du auch dein defektes Auto verkaufen.',
+            'Nein, es fallen keine Gebühren für dich an. Unser Service ist vollständig kostenlos. Übrigens kannst du auch ein defektes Auto bei uns verkaufen.',
         },
         {
           id: 2,
-          title: 'Wie verkaufe ich mein Auto nachdem ich den endgültigen Verkaufspreis erhalten habe?',
+          title: 'Wie gehe ich vor, nachdem ich den endgültigen Verkaufspreis erhalten habe?',
           content:
-            'Nachdem du deinen endgültigen Verkaufspreis erhalten hast, buchst du einen Abgabe-Termin in einer unserer Filialen in deiner Nähe. Vor Ort werden die Auto-Details von einem unserer Mitarbeiter bestätigt. Anschließend wird der Kaufvertrag aufgesetzt und mit deiner Unterschrift der Verkauf deines Autos abgeschlossen. Das Auto bleibt direkt in unserer Filiale. Wir überweisen dir dein Geld und melden dein Auto kostenlos für dich ab.',
+            'Sobald du deinen endgültigen Verkaufspreis erhalten hast, kannst du einen Termin zur Abgabe in einer unserer Filialen in deiner Nähe buchen. Vor Ort werden die Fahrzeugdetails von einem unserer Mitarbeiter überprüft. Danach wird der Kaufvertrag erstellt und mit deiner Unterschrift abgeschlossen. Dein Auto bleibt direkt in unserer Filiale, und wir überweisen dir das Geld sowie kümmern uns um die kostenlose Abmeldung.',
         },
         {
           id: 3,
-          title: 'Wie buche ich meinen Abgabe-Termin?',
+          title: 'Wie kann ich meinen Abgabe-Termin buchen?',
           content:
-            'Nach der Online-Begutachtung erhältst du per E-Mail deinen endgültigen Verkaufspreis. Gleichzeitig schicken wir dir einen Link, damit du auf unserer Website bequem deinen Abgabe-Termin buchen kannst.',
+            'Nach der Online-Begutachtung erhältst du per E-Mail deinen endgültigen Verkaufspreis. Gleichzeitig senden wir dir einen Link zu, über den du bequem auf unserer Website deinen Abgabe-Termin buchen kannst.',
         },
         {
           id: 4,
-          title: 'Wie läuft mein Abgabe-Termin ab?',
+          title: 'Wie erfolgt die Zahlung des Verkaufspreises für mein Auto?',
           content:
-            'Du kommst zu deinem gebuchten Abgabe-Termin in eine unserer über 130 Filialen bundesweit. Ein Mitarbeiter bestätigt deine Eingaben.',
-          content2: 'Wir schließen einen Kaufvertrag mit dir ab und überweisen dir den Verkaufspreis.',
-          content3: 'Wir kümmern uns um die Abmeldung und schicken dir eine Abmeldebestätigung zu.',
+            'Nach dem Verkauf überweisen wir dir den Verkaufspreis schnell und sicher auf dein Bankkonto. Du erhältst dein Geld bequem, zuverlässig und auf einem sicheren Weg. Eine Barauszahlung ist aus Sicherheits- und organisatorischen Gründen leider nicht möglich.',
         },
         {
           id: 5,
-          title: 'Wie bezahlt ihr den Verkaufspreis für mein Auto?',
+          title: 'Hast du noch weitere Fragen?',
           content:
-            'Wir überweisen dir nach dem Verkauf den Verkaufspreis umgehend und absolut sicher auf dein Bankkonto. Du erhältst dein Geld komfortabel, zuverlässig und auf sicherem Weg. Eine Barauszahlung ist aus Sicherheits- und organisatorischen Gründen leider nicht möglich.',
-        },
-        {
-          id: 6,
-          title: 'Du hast noch weitere Fragen?',
-          content:
-            'Solltest du noch weitere Fragen haben, dann findest du in unserem FAQ-Bereich die Antwort. Was unsere über 3 Mio. zufriedenen Kunden über uns denken, findest du in unserem Erfahrungen-Bereich.',
+            'Wenn du noch weitere Fragen hast, findest du möglicherweise die Antwort in unserem FAQ-Bereich.',
         },
       ],
     },
-    /*{
-      category: "Projekte",
-      faqItems: [
-      ]
-    },
-    {
-      category: "Technologie",
-      faqItems: [
-      ]
-    },
-    {
-      category: "Umgebung",
-      faqItems: [
-      ]
-    }*/
   ];
+  /*{
+    category: "Projekte",
+    faqItems: [
+    ]
+  },
+  {
+    category: "Technologie",
+    faqItems: [
+    ]
+  },
+  {
+    category: "Umgebung",
+    faqItems: [
+    ]
+  }*/
 
   const handleFilterClick = (filterName) => {
     setActiveFilter(filterName);
@@ -95,9 +87,8 @@ export const Faq = () => {
             </div>
             <div
               ref={(el) => (contentRefs.current[index] = el)}
-              className={`overflow-hidden transition-all duration-500 ease-in-out ${
-                activeIndex === index ? 'max-h-[300px]' : 'max-h-0'
-              }`}
+              className={`overflow-hidden transition-all duration-500 ease-in-out ${activeIndex === index ? 'max-h-[300px]' : 'max-h-0'
+                }`}
               style={{
                 height: activeIndex === index ? `${contentRefs.current[index]?.scrollHeight}px` : '0px',
               }}

@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
 const RevealText = () => {
-  const words = ['bequem', 'einfach', 'Schnell']; // Words to display
+  const words = ['direkt', 'problemlos']; // Words to display
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
 
   useEffect(() => {

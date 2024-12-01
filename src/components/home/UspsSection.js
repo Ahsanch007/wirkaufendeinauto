@@ -2,30 +2,32 @@ import React from 'react';
 const items = [
   {
     imgSrc: '/images/online-survey.png',
-    title: 'Faire & professionelle Online-Bewertung',
-    description: 'Bei uns erhältst du einen fairen Preis auch ohne Experte zu sein!',
+    title: 'Faire und professionelle Online-Bewertung',
+    description: 'Erhalte einen gerechten Preis, auch wenn du kein Experte bist!',
   },
   {
     imgSrc: '/images/car-sales.png',
-    title: 'Autoverkauf innerhalb von 24 Stunden',
-    description: 'Verkaufe dein Auto innerhalb eines einzigen Tages - stressfrei und ganz ohne Verhandeln!',
+    title: 'Autoverkauf in weniger als 24 Stunden',
+    description: 'Verkaufe dein Auto an einem Tag - ganz ohne Stress und Verhandlungen!',
   },
   {
     imgSrc: '/images/secure-payment-blue-icon.svg',
-    title: 'Erhalte einen Mega Preis',
-    description: 'Als Europas größter Autoankäufer bieten wir dir europaweit Mega Preise.',
+    title: 'Profitiere von einem Spitzenpreis',
+    description: 'Als größter Autoankäufer Europas garantieren wir dir erstklassige Preise in ganz Europa.',
   },
   {
     imgSrc: '/images/check.png',
-    title: 'Kostenlose Abmeldung deines Autos',
-    description: 'Wir übernehmen den kompletten Papierkram für dich.',
+    title: 'Kostenlose Abmeldung deines Fahrzeugs',
+    description: 'Wir kümmern uns um alle notwendigen Formalitäten für dich.',
   },
 ];
+
+
 export const UspsSection = () => {
   return (
     <div className="max-w-[800px] mx-auto px-4 pt-[70px] pb-[40px] ">
       <h1 className="text-center mb-[59px] text-[24px] lg:text-[28px] font-bold text-black ">
-        4 Gründe warum du an uns verkaufen solltest
+        Unsere Vorteile
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-[20px]">
         {items.map((item, index) => (
